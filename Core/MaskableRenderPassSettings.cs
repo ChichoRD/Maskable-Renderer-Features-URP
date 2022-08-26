@@ -7,4 +7,5 @@ public struct MaskableRenderPassSettings
 {
     public LayerMask layerMask;
     public RenderPassEvent renderPassEvent;
+    public bool drawSkybox;
 }

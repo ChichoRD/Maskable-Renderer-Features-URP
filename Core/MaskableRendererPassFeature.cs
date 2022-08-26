@@ -59,5 +59,8 @@ public abstract class MaskableRendererPassFeature : ScriptableRendererFeature
         }
     }
 
-    [SerializeField] protected MaskableRenderPassSettings renderPassSettings;
+    [SerializeField] protected MaskableRenderPassSettings renderPassSettings = new MaskableRenderPassSettings()
+    {
+        renderPassEvent = RenderPassEvent.AfterRenderingOpaques
+    };
 }
